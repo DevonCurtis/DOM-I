@@ -91,3 +91,12 @@ pBottom[2].textContent = siteContent["main-content"]["vision-content"];
 // Title Content/Button
 document.querySelector(".cta .cta-text h1").textContent = siteContent.cta.h1;
 document.querySelector(".cta .cta-text button").textContent = siteContent.cta.button;
+
+// Navigation Links
+const navLinks = document.querySelectorAll("header nav a");
+// console.log(navLinks);
+const linksText = Object.values(siteContent.nav)
+navLinks.forEach((link, index) => {
+  link.textContent = linksText[index];
+  link.classList.add('italic');
+});
