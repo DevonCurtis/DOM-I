@@ -72,3 +72,11 @@ topContent.children[0].children[0].textContent = siteContent["main-content"]["fe
 topContent.children[0].children[1].textContent = siteContent["main-content"]["features-content"];
 topContent.children[1].children[0].textContent = siteContent["main-content"]["about-h4"];
 topContent.children[1].children[1].textContent = siteContent["main-content"]["about-content"];
+
+// Bottom Content
+const bottomContent = document.querySelector('.bottom-content');
+const h4Bottom = bottomContent.querySelectorAll('h4')
+//console.log(h4Bottom);
+h4Bottom[0].textContent = siteContent["main-content"]["services-h4"];
+h4Bottom[1].textContent = siteContent["main-content"]["product-h4"];
+h4Bottom[2].textContent = siteContent["main-content"]["vision-h4"];
