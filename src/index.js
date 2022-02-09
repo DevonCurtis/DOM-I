@@ -87,3 +87,7 @@ const pBottom = bottomContent.querySelectorAll('p');
 pBottom[0].textContent = siteContent["main-content"]["services-content"];
 pBottom[1].textContent = siteContent["main-content"]["product-content"];
 pBottom[2].textContent = siteContent["main-content"]["vision-content"];
+
+// Title Content/Button
+document.querySelector(".cta .cta-text h1").textContent = siteContent.cta.h1;
+document.querySelector(".cta .cta-text button").textContent = siteContent.cta.button;
