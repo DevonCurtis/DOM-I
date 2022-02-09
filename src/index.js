@@ -44,3 +44,6 @@ logoImg.src = siteContent.images['logo-img']
 
 const ctaImg = document.querySelector('#cta-img');
 ctaImg.src = siteContent.images['cta-img'];
+
+const midImg = document.querySelector('#middle-img');
+midImg.src = siteContent.images['accent-img'];
