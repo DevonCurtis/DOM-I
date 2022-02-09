@@ -42,11 +42,13 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 // Images
 const logoImg = document.querySelector("#logo-img");
 logoImg.src = siteContent.images['logo-img']
-
+//console.log(logoImg);
 const ctaImg = document.querySelector('#cta-img');
+//console.log(logoImg);
 ctaImg.src = siteContent.images['cta-img'];
 
 const midImg = document.querySelector('#middle-img');
+//console.log(midImg);
 midImg.setAttribute('src', siteContent.images['accent-img']);
 
 // Footer Link
@@ -54,3 +56,11 @@ const footerLink = document.querySelector('footer a')
 //console.log(footerLink);
 footerLink.textContent = siteContent.footer.copyright;
 footerLink.classList.add('bold');
+
+// Contact
+const contact = document.querySelector("section.contact");
+//console.log(contact);
+contact.children[0].textContent = siteContent.contact["contact-h4"];
+contact.children[1].textContent = siteContent.contact["address"];
+contact.children[2].textContent = siteContent.contact["phone"];
+contact.children[3].textContent = siteContent.contact["email"];
