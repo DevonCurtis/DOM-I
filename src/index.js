@@ -80,3 +80,10 @@ const h4Bottom = bottomContent.querySelectorAll('h4')
 h4Bottom[0].textContent = siteContent["main-content"]["services-h4"];
 h4Bottom[1].textContent = siteContent["main-content"]["product-h4"];
 h4Bottom[2].textContent = siteContent["main-content"]["vision-h4"];
+
+// Bottom Content text
+const pBottom = bottomContent.querySelectorAll('p');
+//console.log(pBottom);
+pBottom[0].textContent = siteContent["main-content"]["services-content"];
+pBottom[1].textContent = siteContent["main-content"]["product-content"];
+pBottom[2].textContent = siteContent["main-content"]["vision-content"];
